@@ -226,21 +226,21 @@ public:
 
 int main()
 {
-	graph<std::string, weighed<double>, oriented > gr
-									{
-									 std::make_tuple("1","2", 7),
-									 std::make_tuple("1","3", 9),
-									 std::make_tuple("1","6", 14) 
-									};
+    graph<std::string, weighed<double>, oriented > gr
+    {
+        std::make_tuple("1","2", 7),
+        std::make_tuple("1","3", 9),
+        std::make_tuple("1","6", 14) 
+    };
 	gr.insert("2", 
-			  "3", 10 , 
-		      "4", 15
-	          );
+              "3", 10 , 
+              "4", 15
+             );
 	gr.insert("3" ,
-		      "6" , 2  ,
-		      "4" , 11 ,
-		      "5" , 15
-			 );
+              "6" , 2  ,
+              "4" , 11 ,
+              "5" , 15
+              );
 	auto list = gr.get_adjacent_vertices("3");
 
 	for (auto it : list) {
