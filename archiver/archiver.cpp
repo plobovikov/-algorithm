@@ -1,6 +1,3 @@
-// Лаба4_СД.cpp: определяет точку входа для консольного приложения.
-//
-
 #include <iostream>
 
 #include "static_huffman.h"
